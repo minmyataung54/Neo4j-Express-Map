@@ -9,7 +9,7 @@ const driver = neo4j.driver(
   neo4j.auth.basic('neo4j', 'password')
 );
 
-app.get('/getNodes', async (req, res) => {
+app.get('/', async (req, res) => {
   const session = driver.session();
 
   try {

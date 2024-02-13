@@ -3,7 +3,7 @@ version: '3.8'
 services:
   express-container:
     build:
-      context: .
+      context: express-backend/
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
